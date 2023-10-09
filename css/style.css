@@ -1,0 +1,122 @@
+/* Zerar tudo (like) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+/*Fazendo algumas pré-definições no body*/
+body {
+    background: linear-gradient(180deg, #db4444 0%, #3f24dd 98%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/*Definindo os paragrafos com a cor branca*/
+h2 {
+    color: white;
+    font-size: 1.5rem;
+
+    margin: 30px 0 20px;
+}
+
+.textForTable {
+    margin: 15px;
+}
+
+/* Fazendo a estilização da primeira box */
+.firstBox{
+    background-color: white;
+    width: 20rem;
+    height: auto;
+
+    border-radius: 15px;
+}
+/* Deixando os inputs alinhados */
+.inputBox {
+    padding-top: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Deixando os input alinhados com o paragrafo de cima */
+.firstInput,
+.secondInput {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Definindo um tamanho para os textos, e dando um espaço de margin entre o paragrafo e o input */
+.firstInput p,
+.secondInput p {
+    font-size: 13px;
+    font-weight: bolder;
+    margin: 0 0 5px 0;
+}
+
+/* Fazendo a estilização dos inputs */
+.firstBox input{
+    width: 60px;
+    height: 35px;
+
+    border-radius: 5px;
+
+    border: 2px solid black;
+    outline: none;
+    text-align: center;
+}
+
+/* Colocando o botão centralizado ao meio e definindo um padding para um espaço para baixo antes do fechamento da div */
+.buttonCalcular{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 15px 0;        
+}
+
+/* Estilizando o botão */
+.buttonCalcular input{
+    background-color: #333;
+    color: #d5d5d5;
+    cursor: pointer;
+
+    border-radius: 5px;
+    width: 180px;
+    height: 35px;
+
+    border: none;
+    outline: none;
+
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* stilando a segunda box */
+.tabuada{
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+    background-color: white;
+    color: #333;
+    width: 20rem;
+    height: auto;
+
+    font-size: 14px;
+    
+
+    padding: 32px 16px;
+    border-radius: 15px;
+}
+
+#resultados {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
